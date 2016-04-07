@@ -1,0 +1,8 @@
+<div *ngIf="!deleting">
+    <p>Do you really want to delete the order?</p>
+    <button (click)="abort()">No</button>
+    <button (click)="proceed()">Yes</button>
+</div>
+<div *ngIf="deleting">
+    <span class="fa fa-spinner fa-spin"></span>
+</div>
